@@ -36,7 +36,7 @@ int main(void)
 	const int cols = screenWidth / size;
 	const int rows = screenHeigth / size;
 
-	InitWindow(screenWidth, screenHeigth, "Pacman");
+	InitWindow(screenWidth, screenHeigth, "PacPac");
 
 	while (!WindowShouldClose())
 	{
