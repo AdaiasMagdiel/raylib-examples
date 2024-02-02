@@ -1,6 +1,6 @@
 # Raylib Examples
 
-This repository contains a compilation of raylib library examples tailored for the Windows environment. Each example folder includes a `compile.bat` file to facilitate the compilation and execution of the corresponding example.
+This repository contains a compilation of [raylib library](https://github.com/raysan5/raylib) (see) examples tailored for the Windows environment. Each example folder includes a `compile.bat` file to facilitate the compilation and execution of the corresponding example.
 
 ## Getting Started
 
@@ -19,6 +19,12 @@ If you want to use GCC and have all the necessary tools available, you can downl
 ## Available Examples
 
 - [Gradient Rect](gradient_rect/main.c)
+
+## Used Libraries
+
+### raylib
+
+This project utilizes the raylib library for generate graphics. Please review the raylib license before using or contributing to this project. Refer to the [LICENSE-raylib](raylib/LICENSE-raylib) file for more details.
 
 ## License
 
