@@ -16,3 +16,8 @@ set libraries=-lraylib -lopengl32 -lgdi32 -lwinmm -mwindows
 gcc -o "%output_file%" "%source_file%" -I%include_dir% -L%lib_dir% %libraries%
 
 echo Successful compiled into %folder_name% folder.
+
+if "%2" == "run" (
+    start %output_file%
+    exit /b 0
+)

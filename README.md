@@ -12,12 +12,18 @@ git clone https://github.com/AdaiasMagdiel/raylib-examples.git
 
 ### Compilation
 
-To compile the examples, run the `compile.bat` file and pass the example folder as argument. This will ensure that the code is compiled correctly, allowing you to run the example.
+To compile the examples, run the `compile.bat` file and pass the example folder as argument. This will ensure that the code is compiled correctly, allowing you to run the example. If you wish to run the program after compilation, just pass the argument 'run' after the example.
 
 For example:
 
 ```cmd
-compile.bat examples\pacpac
+compile.bat examples\gradient_rect
+```
+
+Or
+
+```cmd
+compile.bat examples\pacpac run
 ```
 
 Maybe you need w64devkit to have GCC and all the necessary tools available, you can download the Devkit MinGW-W64/GCC from [here](https://github.com/skeeto/w64devkit/) and add it to the system's PATH.
