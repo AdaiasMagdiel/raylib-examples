@@ -16,11 +16,6 @@ To compile the examples, navigate to the desired example folder and run the `com
 
 If you want to use GCC and have all the necessary tools available, you can download the Devkit MinGW-W64/GCC from [here](https://github.com/skeeto/w64devkit/) and add it to the system's PATH.
 
-```bash
-# Example command to add Devkit MinGW-W64/GCC to PATH (replace [path_to_devkit] with the actual path)
-export PATH=$PATH:[path_to_devkit]
-```
-
 ## Available Examples
 
 - [Gradient Rect](gradient_rect/main.c)
