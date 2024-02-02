@@ -1,4 +1,4 @@
-#include "raylib.h"
+#include "../../raylib/include/raylib.h"
 
 float map(float value, float start1, float stop1, float start2, float stop2)
 {

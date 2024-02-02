@@ -1,5 +1,4 @@
 #include "../../raylib/include/raylib.h"
-// #include "raylib.h"
 
 float angle = 0.0f;
 float velocity = 0.5f;
