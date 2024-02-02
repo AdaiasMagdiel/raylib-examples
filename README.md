@@ -1,6 +1,6 @@
 # Raylib Examples
 
-This repository contains a compilation of [raylib library](https://github.com/raysan5/raylib) (see) examples tailored for the Windows environment. Each example folder includes a `compile.bat` file to facilitate the compilation and execution of the corresponding example.
+This repository contains a compilation of [raylib library](https://github.com/raysan5/raylib) examples tailored for the Windows environment. Each example folder includes a `compile.bat` file to facilitate the compilation and execution of the corresponding example.
 
 ## Getting Started
 
