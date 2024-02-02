@@ -1,6 +1,6 @@
 # Raylib Examples
 
-This repository contains a compilation of [raylib library](https://github.com/raysan5/raylib) examples tailored for the Windows environment. Run the `compile.bat` file with the example folder as argument to facilitate the compilation of the corresponding example.
+This repository contains a compilation of [raylib library](https://github.com/raysan5/raylib) examples that I start to make tailored for the Windows environment. Run the `compile.bat` file with the example folder as argument to facilitate the compilation of the corresponding example.
 
 ## Getting Started
 
@@ -12,17 +12,32 @@ git clone https://github.com/AdaiasMagdiel/raylib-examples.git
 
 ### Compilation
 
-To compile the example, run the `compile.bat` file and pass the example folder as argument. This will ensure that the code is compiled correctly, allowing you to run the example.
+To compile the examples, run the `compile.bat` file and pass the example folder as argument. This will ensure that the code is compiled correctly, allowing you to run the example.
 
-If you want to use GCC and have all the necessary tools available, you can download the Devkit MinGW-W64/GCC from [here](https://github.com/skeeto/w64devkit/) and add it to the system's PATH.
+For example:
 
 ```cmd
-compile.bat examples\gradient_rect
+compile.bat examples\pacpac
 ```
+
+Maybe you need w64devkit to have GCC and all the necessary tools available, you can download the Devkit MinGW-W64/GCC from [here](https://github.com/skeeto/w64devkit/) and add it to the system's PATH.
 
 ## Available Examples
 
-- [Gradient Rect](gradient_rect/main.c)
+<table>
+  <tr>
+    <td>
+      <a href="./examples/gradient_rect/main.c">
+        <img src="./examples/gradient_rect/image.png" alt="Test with rects and colors">
+      </a>
+    </td>
+    <td>
+      <a href="./examples/pacpac/main.c">
+        <img src="./examples/pacpac/image.png" alt="A lot of Pacpac (not Pacma*) spinning">
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## Used Libraries
 
