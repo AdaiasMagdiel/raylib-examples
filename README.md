@@ -42,6 +42,11 @@ Maybe you need w64devkit to have GCC and all the necessary tools available, you 
         <img src="./examples/pacpac/image.png" alt="A lot of Pacpac (not Pacma*) spinning">
       </a>
     </td>
+    <td>
+      <a href="./examples/truchet_tiles/main.c">
+        <img src="./examples/truchet_tiles/image.png" alt="Truchet tiles made with triangles">
+      </a>
+    </td>
   </tr>
 </table>
 

@@ -1,56 +1,66 @@
 #include "../../raylib/include/raylib.h"
+#include <stdlib.h>
+#include <time.h>
 
+void drawShape(int posX, int posY, int size, Color color, int mode) {
+  Vector2 v1;
+  Vector2 v2;
+  Vector2 v3;
 
-int main(void)
-{
-	const int screenWidth = 600;
-	const int screenHeigth = 600;
+  if (mode == 1) {
+    v1 = (Vector2){posX, posY + size};
+    v2 = (Vector2){posX + size, posY + size};
+    v3 = (Vector2){posX + size, posY};
+  } else if (mode == 2) {
+    v1 = (Vector2){posX + size, posY};
+    v2 = (Vector2){posX, posY};
+    v3 = (Vector2){posX + size, posY + size};
+  } else if (mode == 3) {
+    v1 = (Vector2){posX, posY + size};
+    v2 = (Vector2){posX + size, posY + size};
+    v3 = (Vector2){posX, posY};
+  } else if (mode == 4) {
+    v1 = (Vector2){posX, posY + size};
+    v2 = (Vector2){posX + size, posY};
+    v3 = (Vector2){posX, posY};
+  }
 
-	const int size = 80;
-	const int cols = screenWidth / size;
-	const int rows = screenHeigth / size;
+  DrawTriangle(v1, v2, v3, color);
+}
 
-	InitWindow(screenWidth, screenHeigth, "PacPac");
- 
-	while (!WindowShouldClose())
-	{
-		BeginDrawing();
-		ClearBackground(RAYWHITE);
+int randint(int min, int max) { return rand() % (max - min + 1) + min; }
 
-		// V1
-		Vector2 v1 = {0, 80};
-		Vector2 v2 = {80, 80};
-		Vector2 v3 = {80, 0};
-		Color color1 = DARKGREEN;
+int main(void) {
+  srand(time(NULL));
 
-		DrawTriangle(v1, v2, v3, color1);
+  const int screenWidth = 600;
+  const int screenHeigth = 600;
 
-		// v2
-		Vector2 v4 = {160, 80};
-		Vector2 v5 = {80, 0};
-		Vector2 v6 = {80, 80};
-		Color color2 = DARKBLUE;
+  const int size = 40;
+  const int cols = screenWidth / size;
+  const int rows = screenHeigth / size;
 
-		DrawTriangle(v4, v5, v6, color2);
+  int nums[cols][rows];
+  for (int col = 0; col < cols; col++) {
+    for (int row = 0; row < rows; row++) {
+      nums[col][row] = randint(1, 4);
+    }
+  }
 
-		// v3
-		Vector2 v7 = {80, 80};
-		Vector2 v8 = {0, 80};
-		Vector2 v9 = {80, 160};
-		Color color3 = DARKPURPLE;
+  InitWindow(screenWidth, screenHeigth, "Truchet Tiles");
 
-		DrawTriangle(v7, v8, v9, color3);
+  while (!WindowShouldClose()) {
+    BeginDrawing();
+    ClearBackground(RAYWHITE);
 
-		// v4
-		Vector2 v10 = {80, 160};
-		Vector2 v11 = {160, 80};
-		Vector2 v12 = {80, 80};
-		Color color4 = YELLOW;
+    for (int col = 0; col < cols; col++) {
+      for (int row = 0; row < rows; row++) {
+        drawShape(col * size, row * size, size, BLACK, nums[col][row]);
+      }
+    }
 
-		DrawTriangle(v10, v11, v12, color4);
+    EndDrawing();
+  }
 
-		EndDrawing();
-	}
-
-	CloseWindow();
+  CloseWindow();
 }
