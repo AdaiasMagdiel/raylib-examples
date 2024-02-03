@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-void drawShape(int posX, int posY, int size, Color color, int mode) {
+void drawShapeTriangle(int posX, int posY, int size, Color color, int mode) {
   Vector2 v1;
   Vector2 v2;
   Vector2 v3;
@@ -55,7 +55,7 @@ int main(void) {
 
     for (int col = 0; col < cols; col++) {
       for (int row = 0; row < rows; row++) {
-        drawShape(col * size, row * size, size, BLACK, nums[col][row]);
+        drawShapeTriangle(col * size, row * size, size, BLACK, nums[col][row]);
       }
     }
 
