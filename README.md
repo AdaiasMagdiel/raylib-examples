@@ -34,17 +34,17 @@ Maybe you need w64devkit to have GCC and all the necessary tools available, you 
   <tr>
     <td>
       <a href="./examples/gradient_rect/main.c">
-        <img src="./examples/gradient_rect/image.png" alt="Test with rects and colors">
+        <img src="./examples/gradient_rect/image.png" alt="Test with rects and colors" title="Test with rects and colors">
       </a>
     </td>
     <td>
       <a href="./examples/pacpac/main.c">
-        <img src="./examples/pacpac/image.png" alt="A lot of Pacpac (not Pacma*) spinning">
+        <img src="./examples/pacpac/image.png" alt="A lot of Pacpac (not Pacma*) spinning" title="A lot of Pacpac (not Pacma*) spinning">
       </a>
     </td>
     <td>
       <a href="./examples/truchet_tiles/main.c">
-        <img src="./examples/truchet_tiles/image.png" alt="Truchet tiles made with triangles">
+        <img src="./examples/truchet_tiles/image.png" alt="Truchet tiles made with triangles" title="Truchet tiles made with triangles">
       </a>
     </td>
   </tr>
@@ -52,7 +52,7 @@ Maybe you need w64devkit to have GCC and all the necessary tools available, you 
   <tr>
     <td>
       <a href="./examples/snake/main.c">
-        <img src="./examples/snake/image.png" alt="A simple snake game with a few bugs">
+        <img src="./examples/snake/image.png" alt="A simple snake game with a few bugs" title="A simple snake game with a few bugs">
       </a>
     </td>
   </tr>
