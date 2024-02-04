@@ -48,6 +48,14 @@ Maybe you need w64devkit to have GCC and all the necessary tools available, you 
       </a>
     </td>
   </tr>
+
+  <tr>
+    <td>
+      <a href="./examples/snake/main.c">
+        <img src="./examples/snake/image.png" alt="A simple snake game with a few bugs">
+      </a>
+    </td>
+  </tr>
 </table>
 
 ## Used Libraries
