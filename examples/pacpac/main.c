@@ -3,7 +3,7 @@
 float angle = 0.0f;
 float velocity = 0.5f;
 
-void drawPacman(float posX, float posY, float radius, Color color, int mode)
+void drawPacPac(float posX, float posY, float radius, Color color, int mode)
 {
 	Vector2 pos = {posX+radius/2, posY+radius/2};
 	float startAngle = 0.0f;
@@ -46,7 +46,7 @@ int main(void)
 		for (int col = 0; col < cols; col++)
 		{
 			for (int row = 0; row < rows; row++) {
-				drawPacman(col*size, row*size, size, WHITE, mode % 4);
+				drawPacPac(col*size, row*size, size, WHITE, mode % 4);
 				mode++;
 			}
 		}
